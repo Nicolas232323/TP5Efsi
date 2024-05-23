@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Button from './componentes/Button/Button';
+import Input from './componentes/Input/Input';
+import Titulo from './componentes/Titulo/Titulo';
+import { useState } from 'react';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <>
+   <Titulo texto="ToDo"></Titulo>
+    <div class = "AgregarTarea">
+    <Input label="Ingresar Tarea" type="text" name="tarea" classname='u-full-width' placeholder="ingresar tarea"></Input>
+    <Button text="Agregar Tarea" type="submit" classname="u-full-width button-primary"> </Button>
     </div>
+    <div class = "CalcularTareaMasRapida">
+    <Button text="Calcular Tarea Mas Rapida" type="submit" classname="u-full-width button-primary"> </Button>
+    </div>
+   </>
   );
 }
 
