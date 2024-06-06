@@ -3,19 +3,24 @@ import Button from './componentes/Button/Button';
 import Input from './componentes/Input/Input';
 import Titulo from './componentes/Titulo/Titulo';
 import { useState } from 'react';
-function App() {
+function App(props) {
+  const [tarea, setCitas] = useState([]);
   return (
-   <>
-   <Titulo texto="ToDo"></Titulo>
-    <div class = "AgregarTarea">
-    <Input label="Ingresar Tarea" type="text" name="tarea" classname='u-full-width' placeholder="ingresar tarea"></Input>
-    <Button text="Agregar Tarea" type="submit" classname="u-full-width button-primary"> </Button>
-    </div>
-    <div class = "CalcularTareaMasRapida">
-    <Button text="Calcular Tarea Mas Rapida" type="submit" classname="u-full-width button-primary"> </Button>
-    </div>
-   </>
-  );
+    <>
+      <Titulo texto="ADMINISTRADOR DE PACIENTES" />
+      <div className="container">
+        <div className="row">
+          <div className="one-half column">
+          </div>
+          <div className="one-half column">
+            <AgregarTarea></AgregarTarea>
+            <div className="one-half column">
+                 
+              </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
-
 export default App;
