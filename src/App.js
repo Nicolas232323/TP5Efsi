@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import Button from './componentes/Button/Button';
-import Input from './componentes/Input/Input';
 import Titulo from './componentes/Titulo/Titulo';
+import AgregarTarea from "./componentes/AgregarTarea/AgregarTarea";
+import ToDo from './componentes/ToDo/ToDo';
 import { useState } from 'react';
 function App(props) {
-  const [tarea, setCitas] = useState([]);
+  const [tarea, setTarea] = useState([]);
   return (
     <>
       <Titulo texto="ADMINISTRADOR DE PACIENTES" />
@@ -13,10 +14,10 @@ function App(props) {
           <div className="one-half column">
           </div>
           <div className="one-half column">
-            <AgregarTarea></AgregarTarea>
+            <AgregarTarea tarea={tarea} setTarea={setTarea}></AgregarTarea>
             <div className="one-half column">
-                 
-              </div>
+            {tarea.map(t => <div className="cita"><ToDo tarea={tarea} setTarea={setTarea} texto ={t.texto} fechayhora={t.fechayhora} fechayhoraT={t.fechayhoraT} id={t.id}></ToDo></div>)}
+            </div>
           </div>
         </div>
       </div>
