@@ -9,7 +9,7 @@ const ToDo = ({tarea = "", setTarea}) => {
           ...tarea ,
           {
           id: Date.now(),
-          todo: e.target.elements.todo.value,
+          todo: e.target.todo.value,
         }
         ]);
       }
