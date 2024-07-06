@@ -1,19 +1,15 @@
 import React from 'react';
 import './Input.css';
-const Input = ({ label = "label", tipo = "default", setTachado= "", nombre = "default", className = "default", placeholder = "default", tachado }) => {
-    if (tipo === "textarea") {
+const Input = ({ tipo = "default", nombre = "default", className = "default", placeholder = "default", setTachado, tachado }) => {
+    if (tipo === "checkbox") {
         return (
             <>
-                <label> {label} </label>
-                <textarea name={nombre} className={className}></textarea>
+                <input type={tipo} onChange={() => setTachado(!tachado)} name={nombre} placeholder={placeholder}></input>
             </>
         )
-    }else if(tipo === "checkbox"){
-        <input type={tipo} onChange={() => setTachado(!tachado)} name={nombre}  className={className} placeholder={placeholder}></input>
     }
     return (
         <>
-            <label> {label} </label>
             <input type={tipo} name={nombre} className={className} placeholder={placeholder}></input>
         </>
     )

@@ -1,3 +1,10 @@
 .Si{
+    display: flex;
+    flex-direction: row;
     text-decoration: line-through;
+}
+.No{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
 }
