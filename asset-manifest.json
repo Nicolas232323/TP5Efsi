@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nicolas232323/TP5Efsi.git/static/css/main.3f10d4f1.css",
+    "main.js": "/Nicolas232323/TP5Efsi.git/static/js/main.6a650286.js",
+    "static/js/453.37753ddd.chunk.js": "/Nicolas232323/TP5Efsi.git/static/js/453.37753ddd.chunk.js",
+    "index.html": "/Nicolas232323/TP5Efsi.git/index.html",
+    "main.3f10d4f1.css.map": "/Nicolas232323/TP5Efsi.git/static/css/main.3f10d4f1.css.map",
+    "main.6a650286.js.map": "/Nicolas232323/TP5Efsi.git/static/js/main.6a650286.js.map",
+    "453.37753ddd.chunk.js.map": "/Nicolas232323/TP5Efsi.git/static/js/453.37753ddd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f10d4f1.css",
+    "static/js/main.6a650286.js"
+  ]
+}
