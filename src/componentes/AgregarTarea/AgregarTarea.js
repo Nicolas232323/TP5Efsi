@@ -9,7 +9,9 @@ const ToDo = ({tarea = "", setTarea}) => {
           ...tarea ,
           {
           id: Date.now(),
-          todo: e.target.todo.value,
+          texto: e.target.todo.value,
+          horarioTODO: new Date().toLocaleString(),
+          horarioTachado: null
         }
         ]);
       }

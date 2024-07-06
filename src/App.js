@@ -16,7 +16,7 @@ function App(props) {
           <div className="one-half column">
             <AgregarTarea tarea={tarea} setTarea={setTarea}></AgregarTarea>
             <div className="one-half column">
-            {tarea.map(t => <div className="cita"><ToDo tarea={tarea} setTarea={setTarea} texto ={t.texto} fechayhora={t.fechayhora} fechayhoraT={t.fechayhoraT} id={t.id}></ToDo></div>)}
+            {tarea.map(t =><ToDo tarea={tarea} setTarea={setTarea} texto ={t.texto} horarioTODO={t.horarioTODO} horarioTachado={t.horarioTachado} id={t.id}></ToDo>)}
             </div>
           </div>
         </div>

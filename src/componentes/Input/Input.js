@@ -1,6 +1,6 @@
 import React from 'react';
 import './Input.css';
-const Input = ({ label = "label", tipo = "default", setTachado= "", nombre = "default", className = "default", placeholder = "default" }) => {
+const Input = ({ label = "label", tipo = "default", setTachado= "", nombre = "default", className = "default", placeholder = "default", tachado }) => {
     if (tipo === "textarea") {
         return (
             <>
@@ -9,7 +9,7 @@ const Input = ({ label = "label", tipo = "default", setTachado= "", nombre = "de
             </>
         )
     }else if(tipo === "checkbox"){
-        <input type={tipo} name={nombre} onClick={setTachado} className={className} placeholder={placeholder}></input>
+        <input type={tipo} onChange={() => setTachado(!tachado)} name={nombre}  className={className} placeholder={placeholder}></input>
     }
     return (
         <>
